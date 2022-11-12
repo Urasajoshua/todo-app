@@ -8,8 +8,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 </head>
 <body>
-    <h6>update your task</h6>
-    <form class="m-2 text-center" method="POST">
+    <h6 class="text-center text-decoration-underline">update your task</h6>
+    <form class="m-2 text-center form-control" method="POST">
         {% csrf_token%}
         {{updateForm}}
         <button type="submit" class="btn btn-outline-primary">add task</button>
